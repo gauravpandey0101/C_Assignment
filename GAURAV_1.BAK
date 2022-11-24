@@ -12,6 +12,6 @@ void main()
  printf("Integer Numbers Are = %d\t%d" , a,b);
  printf("Floating Numbers Are = %f\t%f" , c,d);
  getch();
- return 0;
+ return 0; 
 }
 
