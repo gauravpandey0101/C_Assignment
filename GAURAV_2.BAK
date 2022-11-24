@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+ int a[10],i;
+ float percentage,sum=0;
+ clrscr();
+ printf("Enter Students Marks for Calculate\n");
+ for(i=0; i<5; i++)
+ {
+//  printf("a[%d] = ", i);
+  scanf("%d" , &a[i]);
+ }
+ for(i=0; i<5; i++)
+ {
+  sum = sum +a[i];
+ }
+ percentage = (sum/5);
+ printf("Sum = %d\n Percentage = %f\n" ,sum,percentage);
+ getch();
+ return 0;
+}

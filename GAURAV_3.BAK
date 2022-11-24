@@ -1,0 +1,19 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+ //a = p*pow((1+r/100),n)
+ float p,r,t,si,r1,n,p1,a;
+ clrscr();
+ printf("Input\n principal\tRate\tTime\n");
+ scanf("%f\t%f\t%f",&p,&r,&t);
+ si = p*r*t/100;
+ printf("Simple Intrest = %f\n",si);
+ printf("Input Value of ammount\tannual intrest\tyears\n");
+ scanf("%f\t%f\t%f\n",&p1,&r1,&n);
+ a = p1*pow((1+r1/100),n);
+ printf("Compound Intrest = %f\n",a);
+ getch();
+ return 0;
+}
+
