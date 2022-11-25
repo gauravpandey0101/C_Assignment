@@ -1,0 +1,15 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+ float r,area,circumference;
+ clrscr();
+ printf("Input Value of R for get Area and Circumference of a Circle\n");
+ scanf("%f",&r);
+ area = 3.14*r*r;
+ circumference = 2*3.14*r*r;
+ printf("Area = %f\n Circumference = %f\n",area,circumference);
+ getch();
+ return 0;
+}
+
