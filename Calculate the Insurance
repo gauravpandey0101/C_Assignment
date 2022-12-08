@@ -1,0 +1,50 @@
+#include<stdio.h>
+#include<conio.h>
+int main()
+{
+ int age,insurance,female1,smoker1;
+ char female,smoker;
+ printf("Input age and gender\n");
+ scanf("%d",&age);
+ fflush(stdin);
+ scanf("%c",&female);
+ printf("Are you Smoker ?\n");
+ scanf("%c",&smoker);
+ if(age>=21 && age<=30)
+ {
+  insurance = 10000;
+ }else if(age>=31 && age<=40)
+ {
+  insurance = 15000;
+ }else if(age>=41 && age<=50)
+ {
+  insurance = 20000;
+ }else if(age>=51 && age<=60)
+ {
+  insurance = 40000;
+ }
+ else
+ {
+  printf("Not Possible");
+ }
+ if(female == 'F' || female == 'f')
+ {
+  female1 = insurance - (insurance*10)/100;
+  printf("Insurance payment is %d\n",female1);
+ }
+ else if(smoker == 'y')
+ {
+  smoker1 = insurance + (insurance*10)/100;
+  printf("Insurance payment is %d\n",smoker1);
+ }
+ else if(female == 'F' || female == 'f' && smoker == 'y' || smoker == 'Y')
+ {
+     printf("Insurance payment is %d\n",insurance);
+ }
+ else
+ {
+     printf("Insurance payment is %d\n",insurance);
+ }
+ return 0;
+}
+
