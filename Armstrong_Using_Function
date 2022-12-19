@@ -1,0 +1,36 @@
+#include <stdio.h>
+#include<math.h>
+int main()
+{
+    int n,result;
+    int ar(int);
+    scanf("%d",&n);
+    result = ar(n);
+    if(result==n)
+    {
+        printf("Armstrong");
+    }
+    else
+    {
+        printf("Not Armstrong");
+    }
+    return 0;
+}
+int ar(int num)
+{
+    int d,d1,sum=0,copy1,count=0;
+    copy1=num;
+    while(copy1 != 0)
+    {
+        d     = copy1%10;
+        count++;
+        copy1 = copy1/10;
+    }
+    while(num!=0)
+    {
+        d1 = num%10;
+        sum = sum+(pow(d1,count));
+        num = num/10;
+    }
+    return sum;
+}
