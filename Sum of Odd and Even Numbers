@@ -1,0 +1,28 @@
+#include<stdio.h>
+int main()
+{
+    int a[5],odd[5],even[5],i,j,o=0,e=0,osum=0,esum=0;
+    for(i=0;i<5;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<5;i++)
+    {
+        if(a[i]%2 == 0)
+        {
+            even[e] = a[i];
+            esum = esum + even[e];
+            e++;
+        }
+        else
+        {
+            odd[o] = a[i];
+            osum = osum + odd[o];
+            o++;
+        }
+    }
+    printf("Even = %d\n",esum);
+    printf("Odd = %d\n",osum);
+
+    return 0;
+}
