@@ -1,0 +1,37 @@
+// ADD two Matrix Using Fuction 
+// Using Call by Reference
+
+#include<stdio.h>
+int main()
+{
+    void sum(int a[][2],int b[][2],int c[][20
+    ]);
+    int a[2][2],b[2][2],c[2][2],i,j;
+    for(i=0;i<2;i++)
+    {
+        for(j=0;j<2;j++)
+        {
+            scanf("%d%d",&a[i][j],&b[i][j]);
+        }
+    }
+    sum(a,b,c);
+    for(i=0;i<2;i++)
+    {
+        for(j=0;j<2;j++)
+        {
+            printf("%d\t",c[i][j]);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+void sum(int a[][2],int b[][2],int c[][2])
+{
+    for(int i=0;i<2;i++)
+    {
+        for(int j=0;j<2;j++)
+        {
+             c[i][j] = a[i][j] + b[i][j];
+        }
+    }
+} 
