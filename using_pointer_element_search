@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+    int a[10],i,*p,*ar,num;
+    ar = &a[0];
+    for(i=0;i<5;i++)
+    {
+        scanf("%d",&a[i]);
+    }
+    printf("Input Number For Search\n");
+    scanf("%d",&num);
+    p = &num;
+    
+    for(i=0;i<5;i++)
+    {
+        if(*p == *ar++)
+        {
+            printf("Found Number %d At %d Location",*p,(i+1));
+            break;
+        }
+    }
+    return 0;
+}
